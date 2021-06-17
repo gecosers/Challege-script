@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Psi Corp.</title>
+</head>
+
+<body>
+  <div class="container-1">
+    <h2>challenge 1: შენი ასაკი დღეებში</h2>
+    <div class="flex-box-container-1">
+      <div>
+        <button class="btn btn-primary" onclick="ageInDays()"> Click me</button>
+      </div>
+
+      <div>
+        <button class="btn btn-danger" onclick="reset()"> reset</button>
+      </div>
+      <div class="flex-box-container-1">
+        <div id="flex-box-result">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-2">
+    <h2>challlenge 2: კატები: გენერატორი</h2>
+    <button class="btn btn-success" id="cat-genereator" onclick="generateCat()">კატები</button>
+
+    <div class="flex-box-container-2" id="flex-cat-gen">
+    </div>
+  </div>
+
+  <div class="container-3">
+    <h2>Challenge 3: ქვა, ფურცელი, მაკრატელი</h2>
+    <div class="flex-box-rps" id="flex-box-rps-div">
+      <img id="rock"
+        src="https://www.thoughtco.com/thmb/_R9hnWbJjGon7cw6RsB30C1tU5o=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/rhyolite-1057171452-5c911d4b46e0fb000187a397.jpg"
+        heigh=150 width=150 alt="" onclick="rpsGame(this)">
+      <img id="paper" src="http://images.clipartpanda.com/paper-clipart-nexxuz-Loose-Leaf-Paper.png" heigh=150 width=150
+        alt="" onclick="rpsGame(this)">
+      <img id="scissors"
+        src="https://thumbs.dreamstime.com/b/female-hand-sign-victory-sign-scissors-vector-flat-illustration-isolated-white-background-web-83128345.jpg"
+        heigh=150 width=150 alt="" onclick="rpsGame(this)">
+    </div>
+  </div>
+
+  <div class="container-4">
+    <h2 id="change-my-colir">Challenge 4: შეცვალეთ ყველა ღილაკის ფერი</h2>
+    <div class="flex-box-pick-color">
+      <form action="">
+        <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+          <option value="random">Reset</option>
+          <option value="random">Red</option>
+          <option value="random">Green</option>
+          <option value="random">Random</option>
+        </select>
+      </form>
+
+      <button class="btn btn-primary">Wee!</button>
+      <button class="btn btn-danger">Yahoo!</button>
+      <button class="btn btn-warning">Google!</button>
+      <button class="btn btn-success">Facebook!</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
